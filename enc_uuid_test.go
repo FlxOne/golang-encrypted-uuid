@@ -1,8 +1,8 @@
 package enc_uuid_test
 
 import (
-	"../golang-encrypted-uuid"
 	"fmt"
+	"github.com/FlxOne/golang-encrypted-uuid"
 	"log"
 	"sync"
 	"testing"
@@ -39,7 +39,7 @@ func TestGenerate(t *testing.T) {
 	}
 	parsedStr, _ := parsed.UuidStr(generator)
 	if parsedStr != "0c53cb40-fe28-4051-7c8f-318a1a870ee4" {
-		panic(fmt.Sprintf("Failed read got ", parsedStr))
+		panic(fmt.Sprintf("Failed read got %s", parsedStr))
 	}
 	parsedStrCached, _ := parsed.UuidStr(generator)
 	if parsedStrCached != "0c53cb40-fe28-4051-7c8f-318a1a870ee4" {

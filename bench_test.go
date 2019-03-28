@@ -1,7 +1,7 @@
 package enc_uuid_test
 
 import (
-	"../golang-encrypted-uuid"
+	"github.com/FlxOne/golang-encrypted-uuid"
 	"github.com/nu7hatch/gouuid"
 	"testing"
 )
